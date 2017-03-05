@@ -8,7 +8,7 @@ RUN apt-get install -y git
 RUN git clone --depth=1 --branch v0.0.6 https://github.com/benkaiser/stretto.git
 RUN (cd stretto && npm install)
 
-#RUN apt-get install -y libav-tools
+RUN apt-get install -y ffmpeg
 
 EXPOSE 2000
 WORKDIR /stretto
