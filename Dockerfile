@@ -5,7 +5,7 @@ MAINTAINER Markus Kramer
 RUN apt-get update
 RUN apt-get install -y ffmpeg
 
-RUN git clone --depth=1 https://github.com/benkaiser/stretto.git
+RUN git clone --depth=1 https://github.com/gtrias/stretto.git
 WORKDIR /stretto
 RUN npm install --unsafe-perm
 
